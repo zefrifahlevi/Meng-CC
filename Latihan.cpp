@@ -10,21 +10,25 @@ int main() {
 	cout<<"Praktikum C++ \n";
 	cout<<"Zefri Fahlevi Irdiansyah \n";
 	
-	char nama[20];
+	char nama[40];
 	char nim[20];
 	char jurusan[20];
 	char kelas[20];
 	
-	cout<<"Nama: ";
+	printf("Nama: ");
 	scanf("%s", &nama);
 	
-	cout<<"NIM: ";
+	printf("NIM: ");
 	scanf("%s", &nim);
 	
-	cout<<"Kelas: ";
+	printf("Kelas: ");
 	scanf("%s", &kelas);
+
+	printf("Jurusan: ");
+	scanf("%s", &jurusan);
 	
 	printf("Nama Anda: %s \n", nama);
 	printf("Nim Anda: %s \n", nim);
 	printf("Kelas Anda: %s \n", kelas);
+	printf("Jurusan Anda: %s \n", jurusan);
 }
