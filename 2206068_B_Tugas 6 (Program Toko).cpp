@@ -98,15 +98,16 @@ int main () {
 			break;
 		break;
 	}	
-		cout << "Uang yang anda bayar: "; cin >> tunai;
 		cout << "Menu yang di pilih " <<nama_menu << ", Jumlah pesan " <<jumlah << " dengan harga " <<harga <<" totalnya harga Rp." <<total <<endl; 
+		cout << "Uang yang anda bayar: "; cin >> tunai;
 		
-		kembalian = tunai - total;
-		if (tunai < total) {
-			cout << "Pembayaran anda kurang" <<endl;
+		if (tunai > total) {
+			kembalian = tunai - total;
+			cout << "Kembalian: Rp." <<kembalian <<endl;
+		} else if (tunai == total) {
+			cout << "Uang pembayaran sesuai "<<endl;
 		} else {
-			cout << "Kembalian anda: "<<kembalian <<endl;
+			cout << "Uang pembayaran tidak cukup" <<endl;
 		}
-		
 		cout << "Terimakasih telah memesan makanan di toko kami";	
 }
